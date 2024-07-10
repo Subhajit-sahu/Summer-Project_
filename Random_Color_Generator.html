@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+</head>
+<style>
+    .main{
+        height: 550px;
+        width: 650px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    .boxes{
+        background-color: aqua;
+        border-radius: 5px;
+        border: 1px solid #00000094;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        mix-blend-mode: difference;
+        box-shadow: 1.5px 0 2px black;
+        cursor: pointer;
+    }
+
+    /* Responsive */
+    @media only screen and (max-width: 767px) {
+        .main{
+            flex-wrap: wrap;
+        }
+    }
+</style>
+<body>
+    <h2>Random Color Generator</h2>
+    <div class="main">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+    <script src="Random_Color_Generator.js"></script>
+</body>
+</html>

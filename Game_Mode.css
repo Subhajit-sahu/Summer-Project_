@@ -1,0 +1,145 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(123,243,222, 0.85) 0%, rgba(123,243,222,0.05) 100%);
+}
+.main{
+    height: 80%;
+    width: 85%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-box{
+    height: 85%;
+    width: 90%;
+    /* border: 4px solid rgb(196, 33, 115); */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 8px;
+    background-color: #d0d5d5;
+}
+
+.main-box::-webkit-scrollbar{
+    width: 9px;
+}
+
+.main-box::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.main-box::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 8px;
+}
+
+.row{
+    height: 48%;
+    width: 100;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8px;
+}
+
+.row .disc{
+    height: 140px;
+    width: 70%;
+    border: 1px solid black;
+    position: relative;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.disc p{
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline;
+}
+
+.disc p span{
+    font-weight: 800;
+}
+
+.disc p span:nth-child(2){
+    font-style:italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.disc h4 span{
+    font-weight: 300;
+    font-style: italic;
+}
+.disc a .gitLogo{
+    height: 20px;
+    position: absolute;
+    top: 82%;
+    right: 2%;
+}
+
+.love h4{
+    color: rgb(231, 15, 15);
+    font-size: 18px;
+}
+
+.row a .picture{
+    height: 180px;
+    width: 220px;
+    /* border: 1px solid red; */
+    border-radius: 4px;
+}
+
+.row1 a .picture{
+    background-image: url('WhatsApp Image 2024-07-02 at 12.10.09_1b92b2e8.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.row2 a .picture{
+    background-image: url('WhatsApp Image 2024-07-03 at 20.31.41_7f6c867b.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.row3 a .picture{
+    background-image: url('WhatsApp Image 2024-07-02 at 12.23.46_65efad10.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.row4 a .picture{
+    background-image: url('WhatsApp Image 2024-07-02 at 12.37.44_c2016557.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.row5 a .picture{
+    background-image: url('WhatsApp Image 2024-07-02 at 13.53.05_fd44a24a.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.row6 a .picture{
+    background-image: url('WhatsApp Image 2024-07-03 at 20.26.49_7850fb4f.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+
+

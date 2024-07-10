@@ -1,0 +1,61 @@
+@media only screen and (max-width: 767px) {
+    .main{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .cursor{
+        display: none;
+    }
+    .head{
+        height: auto;
+        margin: 5px 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .head .JS .logo{
+        margin: 0;
+    }
+
+    .social-media{
+        margin-left: 32%;
+    }
+    .content{
+        height: 260px;
+        margin: 10px 0;
+    }
+    .image-mover{
+        width: 380px;
+    }
+    .prev{
+        left: 25px;
+    }
+    .next{
+        right: 25px;
+    }
+    .blinking-dot{
+        width: 70px;
+    }
+    .blinking-dot .blink{
+        height: 6px;
+        width: 6px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+    }
+    .message h1{
+        font-size: 18px;
+    }
+    .button{
+        height: 35px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .button i{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+}

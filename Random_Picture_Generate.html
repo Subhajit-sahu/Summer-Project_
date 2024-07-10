@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Picture Generator</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: b7rown;
+    }
+    .img-container{
+        text-align: center; 
+    }
+    .img-container img{
+        margin: 8px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        height: 300px;
+        width: 300px;
+        background-color: lightgray;
+    }
+    .btn{
+        border: none;
+        padding: 10px 20px;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: slateblue;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .btn:hover{
+        opacity: 0.9;
+    }
+</style>
+<body>
+    <div class="img-container">
+        <img src="https://picsum.photos/300/300?random=1">
+        <img src="https://picsum.photos/300/300?random=2">
+        <img src="https://picsum.photos/300/300?random=3">
+        <img src="https://picsum.photos/300/300?random=4">
+        <img src="https://picsum.photos/300/300?random=5">
+        <img src="https://picsum.photos/300/300?random=6">
+    </div>
+    <button class="btn">Generate More</button>
+
+
+    <script src="Random_Picture_Generate.js"></script>
+</body>
+</html>
