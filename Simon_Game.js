@@ -3,11 +3,17 @@ let userSeq = [];
 let maxscore = 0;
 let btns = ["red","green","orange","blue"];
 let checkForLevelCnt = 1;
-
+const mediaQuery = window.matchMedia('(max-width: 767px)');
 let start = false;
 let level = 0;
 
 let h4 = document.querySelector("h4");
+let butt = document.querySelector("button");
+
+if (mediaQuery.matches) {
+   h4.innerText = "Press The Start Button To Start The Game ";
+}
+
 document.addEventListener("keypress",function(){
    if(start == false){
     console.log("Game is started");
@@ -18,6 +24,12 @@ document.addEventListener("keypress",function(){
        checkForLevelCnt++;
    }
 });
+butt.addEventListener("click",()=>{
+    if(start == false){
+        start = true;
+        levelUp();
+    }
+})
 
 function gameFlash(btn){
     btn.classList.add("flash");
@@ -45,7 +57,7 @@ function levelUp(){
     // console.log(randColor);
     // console.log(randBtn);
     gameSeq.push(randColor);
-    console.log(gameSeq);    
+    // console.log(gameSeq);    
     gameFlash(randBtn);
 }
 
@@ -57,7 +69,12 @@ function checkAns(idx){
         }
     }
     else{
-        h4.innerHTML = `Game Over! Your Score Was <b>${level}</b> <br> Press any key to restart the game`;
+        if(mediaQuery.matches){
+            h4.innerHTML = `Game Over! Your Score Was <b>${level}</b> <br> Press the Start button to restart the game`;
+        }
+        else{
+            h4.innerHTML = `Game Over! Your Score Was <b>${level}</b> <br> Press the start button any key to restart the game`;
+        }
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor = "white";
